@@ -1,0 +1,76 @@
+.navbar {
+  background-color: var(--fondo);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--espacio-md) 16px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1.5px solid var(--color-borde);
+}
+
+.navbar__logo {
+  justify-self: start;
+}
+
+.navbar__logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: var(--espacio-lg);
+}
+
+.navbar__nav a {
+  font-weight: var(--peso-negrita);
+  transition: color var(--transicion-media);
+}
+
+.navbar__nav a:hover {
+  color: var(--color-acento);
+}
+
+.navbar__actions {
+  display: flex;
+  grid-column: 3;
+  gap: var(--espacio-md);
+  align-items: center;
+  justify-self: end;
+}
+
+/* Botones base */
+.btn {
+  padding: var(--espacio-sm) var(--espacio-md);
+  font-weight: var(--peso-medio);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radio-md);
+  transition: background-color var(--transicion-media);
+}
+
+/* Botón transparente tipo texto */
+.btn--text {
+  background: transparent;
+  color: var(--texto);
+}
+
+.btn--text:hover {
+  color: var(--color-acento);
+}
+
+/* Botón primario */
+.btn--primary {
+  background-color: var(--color-primario);
+  color: var(--texto);
+  box-shadow: var(--sombra-sm);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-secundario);
+}

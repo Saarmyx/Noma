@@ -4,6 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noma</title>
+    <link rel="stylesheet" href="public/css/base/reset.css" />
+    <link rel="stylesheet" href="public/css/base/root.css" />
+    <link rel="stylesheet" href="public/css/base/main.css" />
+    <link rel="stylesheet" href="public/css/landing/header.css" />
+    <link rel="stylesheet" href="public/css/landing/hero.css" />
   </head>
-  <body></body>
+  <body>
+    <div>
+      <header class="navbar">
+        <!-- Logo -->
+        <div class="navbar__logo">
+          <a href="">
+            <img src="assets/logos/logo_rojo.png" alt="Noma logo" />
+          </a>
+        </div>
+
+        <!-- Navegación principal -->
+        <nav class="navbar__nav">
+          <a href="#">NOMA</a>
+          <a href="#">Mail</a>
+          <a href="#">Calendar</a>
+          <a href="#">Explore</a>
+        </nav>
+
+        <!-- Botones -->
+        <div class="navbar__actions">
+          <button class="btn btn--text">Log in</button>
+          <button class="btn btn--primary">Get Noma Free</button>
+        </div>
+      </header>
+
+      <main class="layout_landing">
+        <div class="spring_landing">
+          <div class="spring_landing_hero">
+            <section class="hero_landing">
+              <header class="hero_landing_header">
+                <div class="hero_landing_heading_container">
+                  <h1 class="hero_landing_heading">Fewer apps. More control.</h1>
+                </div>
+                <div>
+                  <h2 class="hero_landing_subheading">
+                    Less excuses, more action. Automate the basics and focus on the essentials.
+                  </h2>
+                </div>
+                <nav class="hero_landing_cta">
+                  <a class="btn btn-principal" href="">Get Noma free</a>
+                  <a class="btn btn-secundario" href="/contact-sales">Request a demo</a>
+                </nav>
+              </header>
+
+              <div class="hero_landing_media">
+                <img src="assets/chicas_hablando.png" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
 </html>

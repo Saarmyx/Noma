@@ -1,0 +1,33 @@
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-size: 16px;
+  cursor: default;
+  font-family: var(--fuente-base);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  container-type: inline-size;
+}
+
+.layout_landing {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding: 0 round(up, 7.22223%, 0.2rem);
+}
+
+.spring_landing {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1252px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-section);
+}
+
+.spring_landing_hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xl);
+}

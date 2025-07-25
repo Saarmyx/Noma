@@ -1,0 +1,104 @@
+.hero_landing {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-hero-gap);
+  max-width: var(--container-max);
+  padding: var(--espacio-hero-padding) var(--container-padding);
+  flex-wrap: wrap;
+}
+
+.hero_landing_header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-md);
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.hero_landing_heading_container {
+  display: block;
+  background-image: url('/assets/brochazos/brochazo_1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  padding: var(--espacio-xs) 0;
+}
+
+.hero_landing_heading {
+  font-size: var(--tamaño-xxl);
+  font-weight: var(--peso-negrita);
+  margin: 0;
+  padding: 0;
+  color: var(--texto);
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
+.hero_landing_subheading {
+  margin: 0;
+  max-width: var(--subheading-max-width);
+  font-size: var(--tamaño-md);
+  font-weight: var(--peso-medio);
+  color: var(--texto-secundario);
+  line-height: 1.5;
+  text-wrap-style: balance;
+}
+
+.hero_landing_cta {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--espacio-sm);
+  margin-top: var(--espacio-md);
+  max-width: 100%;
+}
+
+.btn {
+  min-height: var(--altura-boton);
+  padding: var(--padding-boton-vertical) var(--padding-boton-horizontal);
+  font-weight: var(--peso-medio);
+  font-size: var(--tamaño-body);
+  border: none;
+  border-radius: var(--radio-md);
+  cursor: pointer;
+  transition: background-color var(--transicion-media), color var(--transicion-media);
+}
+
+.btn-principal {
+  background-color: var(--color-primario);
+  color: var(--texto);
+  box-shadow: var(--sombra-sm);
+}
+.btn-principal:hover {
+  background-color: var(--color-secundario);
+  color: var(--texto);
+}
+
+.btn-secundario {
+  color: var(--color-primario);
+  background: transparent;
+}
+.btn-secundario:hover {
+  opacity: var(--opacidad-hover);
+}
+
+.hero_landing_media {
+  --hero-media-max-width: 50%;
+  width: 100%;
+  max-width: var(--hero-media-max-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: -1;
+  margin-top: var(--image-top-offset);
+  flex: 1 1 300px;
+}
+
+.hero_landing_media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radio-md);
+  object-fit: cover;
+}

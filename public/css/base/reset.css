@@ -1,0 +1,111 @@
+/* RESET CSS COMPLETO Y MODERNO */
+
+/* 1. Box sizing: border-box para todo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Eliminar márgenes y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Mejorar tipografía en general */
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Establecer altura completa */
+html,
+body {
+  height: 100%;
+}
+
+/* 5. Permitir imágenes responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Quitar estilo de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Quitar subrayado y color azul en enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 8. Botones y formularios coherentes */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+}
+
+/* 9. Cursor por defecto en botones */
+button {
+  cursor: pointer;
+}
+
+/* 10. Quitar quotes en blockquote y q */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* 11. Tablas sin bordes raros */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 12. Preventar scroll jumps en 100vh en móviles */
+body {
+  min-height: 100vh;
+  text-size-adjust: 100%;
+}
+
+/* 13. Animaciones respetuosas con accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
